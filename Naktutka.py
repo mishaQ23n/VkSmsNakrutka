@@ -17,9 +17,9 @@ vk = vk_session.get_api()
 chelii = [chelo,chels]
 sdss = 0
 while int(sdss) < int(kalas):
-try:
-	vk.messages.createChat(user_ids=chelii,title='pizdatya nakrutka chmotie')
-	sdss += 1
-	time.sleep(60)
-except vk_api.exceptions.ApiError:
-   print("Чет не так Error 444")
+   try:
+	   vk.messages.createChat(user_ids=chelii,title='pizdatya nakrutka chmotie')
+	   sdss += 1
+	   time.sleep(60)
+   except vk_api.exceptions.ApiError:
+       print("Чет не так Error 444")
